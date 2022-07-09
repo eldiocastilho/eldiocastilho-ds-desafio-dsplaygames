@@ -42,3 +42,84 @@ body {
 .nav-container img {
   width: 62px;
 }
+#news {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+}
+.news-title {
+  font-size: 24px;
+  color: var(--text-gray);
+  text-align: center;
+}
+.news-container {
+}
+.news-card {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+
+  background-color: var(--bg-gray);
+  border-radius: 8px;
+  padding: 12px;
+
+  border: 1px solid red;
+
+}
+.news-card h3 {
+  font-size: 16px;
+  color: var(--color-green);
+
+}
+.news-card h4 {
+  font-size: 12px;
+  color: var(--text-gray);
+}
+
+.news-card-date {
+  font-size: 10px;
+  color: var(--color-green);
+}
+
+.news-card-text {
+  font-size: 10px;
+  color: var(--text-gray);
+}
+
+.news-card-read-more {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-red);
+}
+
+#games {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light-gray);
+}
+
+.games-title {
+  color: var(--color-green);
+  text-align: center;
+}
+.games-container {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+}
+.games-card {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+
+  background-color: var(--color-white);
+  border-radius: 8px;
+
+
+  border: 1px solid red;
+}
+.games-card img {
+  width: 300px;
+  height: 168px;
+  border-radius: 8px;
+}
