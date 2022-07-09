@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DSPlayGames</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header-container">
+      <nav class="nav-container">
         <h1>DSPlayGames</h1>
-        <ul>
-          <li><a href="#news#">Notícias</a></li>
-          <li><a href="#games">Jogos</a></li>
-          <li><a href="#sign_up">Inscreva-se</a></li>
-        </ul>
         <img src="img/user.png" alt="Usuário" />
       </nav>
     </header>
@@ -140,7 +142,7 @@
             </div>
           </div>
           <div>
-            <input id="ctrl_receive_news" name="receive_news" type="checkbox">
+            <input id="ctrl_receive_news" name="receive_news" type="checkbox" />
             <label for="ctrl_receive_news">Desejo receber novidades.</label>
           </div>
           <input type="submit" value="Enviar" />
