@@ -4,6 +4,7 @@
   --color-red: #dd7e92;
   --bg-light-gray: #e5e5e5;
   --bg-gray: #f0f0f0;
+  --bg-black: #383838;
   --text-gray: #797979;
 }
 
@@ -64,12 +65,10 @@ body {
   padding: 12px;
 
   border: 1px solid red;
-
 }
 .news-card h3 {
   font-size: 16px;
   color: var(--color-green);
-
 }
 .news-card h4 {
   font-size: 12px;
@@ -138,21 +137,80 @@ body {
 .games-card span {
   font-size: 14px;
   color: var(--color-green);
-  font-weight: 700; 
+  font-weight: 700;
 }
-
 #sign_up h2 {
   font-weight: 700;
   font-size: 24px;
-  
+
   text-align: center;
 }
 .form-card {
   width: 100%;
-  max-width: 790px;
+  max-width: 300px;
   margin: 0 auto;
 
   background-color: var(--bg-gray);
+  border-radius: 8px;
+  padding: 8px;
+}
+.form-card form input {
+  height: 5opx;
+  width: 280px;
+}
+#btn-send {
+  height: 67px;
+  width: 244px;
+  border-radius: 8px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-size: 18px;
+  border: none;
+}
+#btn-reset {
+  height: 67px;
+  width: 244px;
+  border-radius: 8px;
+  background-color: var(--color-white);
+  color: var(--color-red);
+  font-size: 18px;
+  border: 2px solid var(--color-red);
+}
+footer {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
 
-  border: 1px solid red;
+  height: 302px;
+  background-color: var(--bg-black);
+
+  color: var(--color-white);
+  font-size: 14px;
+}
+.footer-content {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+
+  height: 302px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+
+  justify-content: space-around;
+}
+.footer-content p {
+  padding: 3px;
+}
+.footer-company {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+
+}
+.footer-terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
