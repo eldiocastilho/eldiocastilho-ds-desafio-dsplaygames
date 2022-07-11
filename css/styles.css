@@ -24,6 +24,7 @@ body {
   width: 100%;
   background-color: var(--color-green);
   padding: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
 }
 .nav-container {
   width: 100%;
@@ -33,8 +34,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  border: 1px solid red;
 }
 .nav-container h1 {
   color: var(--color-white);
@@ -52,8 +51,13 @@ body {
   font-size: 24px;
   color: var(--text-gray);
   text-align: center;
+  margin-top: 40px;
 }
 .news-container {
+  font-size: 24px;
+  color: var(--text-gray);
+  text-align: center; 
+  padding: 10px;
 }
 .news-card {
   width: 100%;
@@ -64,7 +68,10 @@ body {
   border-radius: 8px;
   padding: 12px;
 
-  border: 1px solid red;
+  text-align: left;
+  margin-bottom: 28px;
+  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .news-card h3 {
   font-size: 16px;
@@ -74,7 +81,16 @@ body {
   font-size: 12px;
   color: var(--text-gray);
 }
+.news-card-line {
+  width: 100%;
+  max-width: 910px;
+  margin: 0 auto;
 
+
+  height: 3px;
+  border: 3px solid var(--color-green);
+
+}
 .news-card-date {
   font-size: 10px;
   color: var(--color-green);
@@ -84,11 +100,23 @@ body {
   font-size: 10px;
   color: var(--text-gray);
 }
-
 .news-card-read-more {
   font-size: 14px;
   font-weight: 700;
   color: var(--color-red);
+}
+#btn-get-more {
+  height: 67px;
+  width: 244px;
+  border-radius: 8px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-size: 18px;
+  border: none;
+
+  font-weight: 700;
+
+  margin-bottom: 40px;
 }
 
 #games {
@@ -104,7 +132,9 @@ body {
 .games-container {
   width: 100%;
   max-width: 990px;
-  margin: 0 auto;
+ /* margin: 0 auto;*/
+
+  margin: 10px;
 }
 .games-card {
   width: 100%;
@@ -117,8 +147,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  border: 1px solid red;
 }
 .games-card img {
   width: 300px;
@@ -166,6 +194,7 @@ body {
   color: var(--color-white);
   font-size: 18px;
   border: none;
+  margin: 8px;
 }
 #btn-reset {
   height: 67px;
@@ -175,6 +204,7 @@ body {
   color: var(--color-red);
   font-size: 18px;
   border: 2px solid var(--color-red);
+  margin: 8px;
 }
 footer {
   width: 100%;
