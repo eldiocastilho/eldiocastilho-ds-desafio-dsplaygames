@@ -30,7 +30,6 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Architecto vitae ducimus aperiam.
             </h4>
-            <p class="news-card-line">.</p>
             <p class="news-card-date">23/02/2022</p>
             <p class="news-card-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -60,7 +59,6 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Architecto vitae ducimus aperiam.
             </h4>
-            <p class="news-card-line">.</p>
             <p class="news-card-date">23/02/2022</p>
             <p class="news-card-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -95,7 +93,7 @@
             <img src="img/game.png" alt="Game1" />
             <h3>Horizon Forbidden West</h3>
             <p><span>De</span> Sony Interactive Entertainment</p>
-            <p class="games-card-score">9.7</p>
+            <p id="score">9.7</p>
           </div>
           <div class="games-card">
             <img src="img/game.png" alt="Game2" />
@@ -106,63 +104,66 @@
           <div class="games-card">
             <img src="img/game.png" alt="Game3" />
             <h3>Horizon Forbidden West</h3>
-            <p><span>De</span>Sony Interactive Entertainment</p>
+            <p><span>De</span> Sony Interactive Entertainment</p>
             <p class="games-card-score">9.7</p>
           </div>
         </div>
       </section>
 
       <section id="sign_up">
-        <h2>Faça sua inscrição</h2>
-        <div class="form-card">
-          <form action="sign_up.html">
-            <div>
-              <label for="ctrl_name"></label>
-              <input
-                id="ctrl_name"
-                name="name"
-                type="text"
-                placeholder="Nome completo"
-              />
-            </div>
-            <div>
-              <label for="ctrl_email"></label>
-              <input
-                id="ctrl_email"
-                name="email"
-                type="email"
-                placeholder="Email"
-              />
-            </div>
-            <div>
-              <label for="ctrl_platform">Qual sua plataforma preferida?</label>
+        <div class="sign_up-container">
+          <h2>Faça sua inscrição</h2>
+          <div class="form-card">
+            <form action="sign_up.html">
               <div>
+                <label for="ctrl_name"></label>
+                <input
+                  id="ctrl_name"
+                  name="name"
+                  type="text"
+                  placeholder="Nome completo"
+                />
+              </div>
+              <div>
+                <label for="ctrl_email"></label>
+                <input
+                  id="ctrl_email"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div>
+                <label for="ctrl_platform">Qual sua plataforma preferida?</label>
                 <div>
-                  <input type="radio" name="platform" id="cltr_platform_1" />
-                  <label for="cltr_platform_1">PC</label>
-                </div>
-                <div>
-                  <input type="radio" name="platform" id="cltr_platform_2" />
-                  <label for="cltr_platform_2">Xbox</label>
-                </div>
-                <div>
-                  <input type="radio" name="platform" id="cltr_platform_3" />
-                  <label for="cltr_platform_3">Playstation</label>
+                  <div>
+                    <input type="radio" name="platform" id="cltr_platform_1" />
+                    <label for="cltr_platform_1">PC</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="platform" id="cltr_platform_2" />
+                    <label for="cltr_platform_2">Xbox</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="platform" id="cltr_platform_3" />
+                    <label for="cltr_platform_3">Playstation</label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <input
-                id="ctrl_receive_news"
-                name="receive_news"
-                type="checkbox"
-              />
-              <label for="ctrl_receive_news">Desejo receber novidades.</label>
-            </div>
-            <input id="btn-send" type="submit" value="Enviar" />
-            <input id="btn-reset" type="reset" value="Limpar" />
-          </form>
+              <div>
+                <input
+                  id="ctrl_receive_news"
+                  name="receive_news"
+                  type="checkbox"
+                />
+                <label for="ctrl_receive_news">Desejo receber novidades.</label>
+              </div>
+              <input id="btn-send" type="submit" value="Enviar" />
+              <input id="btn-reset" type="reset" value="Limpar" />
+            </form>
+          </div>
         </div>
+
       </section>
     </main>
     <footer>
