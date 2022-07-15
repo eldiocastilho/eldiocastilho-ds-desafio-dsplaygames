@@ -6,6 +6,7 @@
   --bg-gray: #f0f0f0;
   --bg-black: #383838;
   --text-gray: #797979;
+  --placeholder_light_gray: #c4c4c4;
 }
 
 * {
@@ -115,11 +116,18 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-light-gray);
-}
 
+}
+.games-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .games-title {
   color: var(--color-green);
   text-align: center;
+
+  padding: 40px 0 28px 0;
 }
 .games-container {
   width: 100%;
@@ -133,7 +141,7 @@ body {
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
-  
+
   background-color: var(--color-white);
   border-radius: 8px;
 
@@ -142,6 +150,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  height: 326px;
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 .games-card img {
   width: 300px;
@@ -151,6 +163,8 @@ body {
 .games-card h3 {
   font-size: 18px;
   color: var(--text-gray);
+
+  margin-top: 30px;
 }
 
 .games-card span {
@@ -162,17 +176,12 @@ body {
   font-size: 12px;
   color: var(--text-gray);
 }
-.games-card-score {
-  font-size: 36px;
-  color: var(--color-green);
-  font-weight: 700;
-}
+
 #score {
   font-size: 36px;
   color: var(--color-green);
   font-weight: 700;
 }
-
 
 #sign-up {
   width: 100%;
@@ -188,6 +197,8 @@ body {
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
+
+  color: var(--text-gray);
 }
 
 .form-card {
@@ -197,12 +208,47 @@ body {
 
   width: 100%;
   max-width: 790px;
-  height: 552px;
+  height: 603px;
 }
 .form-card form input {
-  height: 5opx;
+  height: 50px;
   width: 280px;
+
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding: 22px;
+
+  font-size: 16px;
+  border: 1px solid var(--text-gray);
 }
+.form-card form input::placeholder {
+  color: var(--placeholder_light_gray);
+}
+
+#cltr_platform_1 {
+  width: 23px;
+  
+}
+#cltr_platform_1 input {
+  height: 24px;
+}
+
+.ctrl-radio {
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+
+  width: 253px;
+}
+.ctrl-radio-1 {
+  display: flex;
+  align-items: baseline;
+  align-content: center;
+
+  width: 253px;
+  height: 24px;
+}
+
 #btn-send {
   height: 67px;
   width: 244px;
@@ -224,15 +270,9 @@ body {
   margin: 8px;
 }
 footer {
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
-
+  margin: 0;
   height: 302px;
   background-color: var(--bg-black);
-
-  color: var(--color-white);
-  font-size: 14px;
 }
 .footer-content {
   width: 100%;
@@ -246,6 +286,9 @@ footer {
   align-items: center;
 
   justify-content: space-around;
+
+  color: var(--color-white);
+  font-size: 14px;
 }
 .footer-content p {
   padding: 3px;
