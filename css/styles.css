@@ -162,9 +162,11 @@ margin: 0px;
   max-width: 990px;
 
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
 }
+
 .games-card {
   width: 100%;
   max-width: 300px;
@@ -183,6 +185,7 @@ margin: 0px;
 
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
+
 .games-card img {
   width: 300px;
   height: 168px;
@@ -323,6 +326,7 @@ margin: 0px;
   margin: 8px;
   font-weight: 700;
 }
+
 #btn-reset {
   height: 67px;
   width: 244px;
@@ -340,6 +344,7 @@ footer {
   height: 302px;
   background-color: var(--bg-black);
 }
+
 .footer-content {
   width: 100%;
   max-width: 320px;
@@ -356,18 +361,49 @@ footer {
   color: var(--color-white);
   font-size: 14px;
 }
+
 .footer-content p {
   padding: 3px;
 }
+
 .footer-company {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .footer-terms {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  
+  footer {
+    height: 190px;
+  }
+
+  .footer-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    height: 190px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-around;
+
+    color: var(--color-white);
+    font-size: 14px;
+  }
+  .footer-company {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 992px) {
@@ -389,6 +425,16 @@ footer {
 
   #games {
     height: 559px;
+  }
+
+  .games-container {
+    width: 100%;
+    max-width: 990px;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
   }
 
   .sign_up-container {
@@ -418,28 +464,4 @@ footer {
     width: 642px;
   }
 
-  footer {
-    height: 190px;
-  }
-
-  .footer-content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-
-    height: 190px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    justify-content: space-around;
-
-    color: var(--color-white);
-    font-size: 14px;
-  }
-  .footer-company {
-    display: flex;
-    flex-direction: row;
-  }
 }
