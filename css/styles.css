@@ -40,8 +40,26 @@ body {
   color: var(--color-white);
   font-size: 18px;
 }
+
 .nav-container img {
   width: 62px;
+}
+
+.menu-itens {
+  display: flex;
+  list-style-type: none;
+}  
+
+.menu-itens a {
+text-decoration: none;
+color: var(--color-white);
+display: none;
+visibility: hidden;
+margin: 0px;
+}  
+
+.menu-itens li {
+  margin: 0px;
 }
 
 #news {
@@ -49,18 +67,21 @@ body {
   max-width: 990px;
   margin: 0 auto;
 }
+
 .news-title {
   font-size: 24px;
   color: var(--text-gray);
   text-align: center;
   margin-top: 40px;
 }
+
 .news-container {
   font-size: 24px;
   color: var(--text-gray);
   text-align: center;
   padding: 10px;
 }
+
 .news-card {
   width: 100%;
   max-width: 990px;
@@ -75,15 +96,18 @@ body {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .news-card h3 {
   font-size: 16px;
   color: var(--color-green);
 }
+
 .news-card h4 {
   font-size: 12px;
   color: var(--text-gray);
   border-bottom: 1px solid var(--color-green);
 }
+
 .news-card-date {
   font-size: 10px;
   color: var(--color-green);
@@ -93,11 +117,13 @@ body {
   font-size: 10px;
   color: var(--text-gray);
 }
+
 .news-card-read-more {
   font-size: 14px;
   font-weight: 700;
   color: var(--color-red);
 }
+
 #btn-get-more {
   height: 67px;
   width: 244px;
@@ -116,19 +142,21 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-light-gray);
-
 }
+
 .games-cont {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .games-title {
   color: var(--color-green);
   text-align: center;
 
   padding: 40px 0 28px 0;
 }
+
 .games-container {
   width: 100%;
   max-width: 990px;
@@ -145,7 +173,7 @@ body {
   background-color: var(--color-white);
   border-radius: 8px;
 
-  margin: 10px;
+  margin: 0px 10px 20px 10px;
 
   display: flex;
   flex-direction: column;
@@ -188,6 +216,7 @@ body {
   max-width: 790px;
   margin: 0 auto;
 }
+
 #sign_up h2 {
   font-weight: 700;
   font-size: 24px;
@@ -195,6 +224,7 @@ body {
 
   margin-top: 40px;
 }
+
 .sign_up-container {
   width: 100%;
   max-width: 300px;
@@ -216,6 +246,7 @@ body {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 #ctrl_name {
   height: 50px;
   width: 280px;
@@ -226,8 +257,9 @@ body {
   padding: 22px;
 
   font-size: 16px;
-  border: 1px solid var(--text-gray);  
+  border: 1px solid var(--text-gray);
 }
+
 #ctrl_email {
   height: 50px;
   width: 280px;
@@ -237,50 +269,34 @@ body {
   padding: 22px;
 
   font-size: 16px;
-  border: 1px solid var(--text-gray);  
+  border: 1px solid var(--text-gray);
 }
 
 .form-card form input::placeholder {
   color: var(--placeholder_light_gray);
 }
 
-
-
-
-/*
-#cltr_platform_1 {
-  width: 23px;
-  
-}
-
-#cltr_platform_1 input {
-  height: 24px;
-  color: black;
-}
-*/
-
-
-
 .ctrl-radio {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: flex-start;
-
   width: 253px;
 }
 
 .ctrl-radio input {
   height: 24px;
 }
-/*
-.ctrl-radio-1 {
-  display: flex;
-  align-items: center;
 
-  width: 253px;
-  height: 24px;
+.radio {
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px 0px 0px;
 }
-*/
+
+#cltr_platform_1 {
+  margin: 0px 10px 0px 0px; 
+}
+
 .radio {
   height: 24px;
 }
@@ -290,6 +306,11 @@ body {
   margin-bottom: 47px;
 }
 
+.ctrl-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}  
 
 #btn-send {
   height: 67px;
@@ -313,15 +334,6 @@ body {
   margin: 8px;
   font-weight: 700;
 }
-
-
-
-
-
-
-
-
-
 
 footer {
   margin: 0;
@@ -356,4 +368,78 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 992px) {
+
+  .menu-itens a {
+    visibility: visible;
+    display: contents;
+    margin: 20px;
+  }
+
+  .menu-itens li {
+    margin: 20px;
+  }
+
+  .menu-itens-foto {
+    display: flex;
+    justify-content: center;
+  }
+
+  #games {
+    height: 559px;
+  }
+
+  .sign_up-container {
+    width: 100%;
+    max-width: 790px;
+    height: 603px;
+    width: 790px;
+  }
+
+  .form-card {
+    padding: 0 0 0 70px;
+    margin-bottom: 61px;
+    height: 522px;
+  }
+  #ctrl_name {
+    width: 642px;
+  }
+
+  #ctrl_email {
+    width: 642px;
+  }
+
+  .ctrl-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 642px;
+  }
+
+  footer {
+    height: 190px;
+  }
+
+  .footer-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    height: 190px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-around;
+
+    color: var(--color-white);
+    font-size: 14px;
+  }
+  .footer-company {
+    display: flex;
+    flex-direction: row;
+  }
 }

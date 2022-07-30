@@ -17,7 +17,14 @@
     <header class="header-container">
       <nav class="nav-container">
         <h1>DSPlayGames</h1>
-        <img src="img/user.png" alt="Usuário" />
+        <div class="menu-itens-foto">
+          <ul class="menu-itens">
+            <li><a href="#news">Notícias</a></li>
+            <li><a href="#games">Jogos</a></li>
+            <li><a href="#sign_up">Inscreva-se</a></li>
+          </ul>
+          <img src="img/user.png" alt="Usuário" />
+        </div>
       </nav>
     </header>
     <main>
@@ -140,16 +147,16 @@
                   >Qual sua plataforma preferida?</label
                 >
                 <div class="ctrl-radio">
-                  <div>
+                  <div class="radio">
                     <input type="radio" name="platform" id="cltr_platform_1" />
                     <label for="cltr_platform_1">PC</label>
                   </div>
-                  <div>
-                    <input type="radio" name="platform" id="cltr_platform_2" />
+                  <div class="radio">
+                    <input type="radio" name="platform" id="cltr_platform_1" />
                     <label for="cltr_platform_2">Xbox</label>
                   </div>
-                  <div>
-                    <input type="radio" name="platform" id="cltr_platform_3" />
+                  <div class="radio">
+                    <input type="radio" name="platform" id="cltr_platform_1" />
                     <label for="cltr_platform_3">Playstation</label>
                   </div>
                 </div>
@@ -162,8 +169,10 @@
                 />
                 <label for="ctrl_receive_news">Desejo receber novidades.</label>
               </div>
-              <input id="btn-send" type="submit" value="Enviar" />
-              <input id="btn-reset" type="reset" value="Limpar" />
+              <div class="ctrl-btn">
+                <input id="btn-send" type="submit" value="Enviar" />
+                <input id="btn-reset" type="reset" value="Limpar" />
+              </div>
             </form>
           </div>
         </div>
